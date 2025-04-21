@@ -104,6 +104,7 @@ if st.button("Generate Travel Plan"):
     else:
         st.info("Please provide the API keys to enable travel plan generation.")
 
+<<<<<<< HEAD
 # import streamlit as st
 # from textwrap import dedent
 # from agno.agent import Agent
@@ -204,26 +205,7 @@ if st.button("Generate Travel Plan"):
 #                     show_tool_calls=True,
 #                     markdown=True,
 #                 )
+=======
+>>>>>>> dc6f41f476684ec30526bded4af1074ddc686483
 
-
-# # # Example usage with different types of travel queries
-# # if __name__ == "__main__":
-# #     travel_agent.print_response(
-# #         "I want to plan an offsite for 14 people for 3 days (28th-30th March) in ondo "
-# #         "within 10k dollars each. Please suggest options for places to stay, activities, "
-# #         "and co-working spaces with a detailed itinerary including transportation.",
-# #         stream=True,
-# #     )
-# agent_response = travel_agent.run(f"I want to plan an offsite for 14 people for 3 days (28th-30th March) in ondo "
-#         "within 10k dollars each. Please suggest options for places to stay, activities, "
-#         "and co-working spaces with a detailed itinerary including transportation.")
-
-# response = agent_response.content
-
-
-# planner_response = travel_planner.run(response)
-# planned_response = planner_response.content
-
-# print(response)
-# print(planned_response)
 
