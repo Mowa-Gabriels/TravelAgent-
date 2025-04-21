@@ -70,7 +70,7 @@ else:
     travel_planner = None
     st.warning("Please enter both Gemini and EXA API keys in the sidebar to use the planner.")
 
-st.title("🌍Travel-Planner.sx")
+st.title("Travel-Plannr")
 
 location = st.text_input("Where would you like to travel?")
 duration_options = ["1 day", "2 days", "3 days", "4 days", "5 days", "7 days", "10 days"]
@@ -116,12 +116,12 @@ if st.button("Generate Travel Plan"):
 
 # logging.basicConfig(level=logging.DEBUG)
 
-# gemini_model=Gemini(id="gemini-2.0-flash",api_key="AIzaSyCcx2Jis1O6G3iUf8YvbTnXcbhPiUhnMOk")
+# gemini_model=Gemini(id="gemini-2.0-flash")
 
 # travel_agent = Agent(
 #     name="Globe Hopper",
 #     model=gemini_model,
-#     tools=[ExaTools(api_key = "a5e428d9-142d-4c12-ab14-c627f67ed5cb")],
+#     tools=[ExaTools],
 #     markdown=True,
 #     description=dedent("""\
 #         You are Globe Hopper, an elite travel planning expert with decades of experience! 🌍
