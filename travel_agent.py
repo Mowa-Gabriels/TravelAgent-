@@ -104,7 +104,6 @@ if st.button("Generate Travel Plan"):
     else:
         st.info("Please provide the API keys to enable travel plan generation.")
 
-<<<<<<< HEAD
 # import streamlit as st
 # from textwrap import dedent
 # from agno.agent import Agent
@@ -205,7 +204,5 @@ if st.button("Generate Travel Plan"):
 #                     show_tool_calls=True,
 #                     markdown=True,
 #                 )
-=======
->>>>>>> dc6f41f476684ec30526bded4af1074ddc686483
 
 
