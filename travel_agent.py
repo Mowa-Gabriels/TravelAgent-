@@ -75,6 +75,7 @@ st.title("Travel-Plannr")
 location = st.text_input("Where would you like to travel?")
 duration_options = ["1 day", "2 days", "3 days", "4 days", "5 days", "7 days", "10 days"]
 duration = st.selectbox("How long will your trip be?", duration_options)
+budget = st.text_input("what is your budget for this trip?")
 travelers_option = st.radio("Number of Travelers:", ["Solo Trip", "More than one"])
 
 num_travelers = 1
@@ -86,6 +87,8 @@ if st.button("Generate Travel Plan"):
         st.warning("Please enter both Gemini and EXA API keys in the sidebar.")
     elif not location:
         st.warning("Please enter a location for your trip.")
+    elif not budget:
+        st.warning("Please enter a budget for your trip.")
     elif travel_agent and travel_planner:
         with st.spinner(f"Generating a travel plan for {num_travelers} traveler(s) in {location} for {duration}..."):
             try:
